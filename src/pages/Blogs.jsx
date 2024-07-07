@@ -10,7 +10,7 @@ const Blogs = () => {
         <h1 className="font-bold text-slate-950 text-4xl mb-6 mt-6 text-center">
           Blogs
         </h1>
-        {blogs.length !== 0 ? (
+        {blogs.length != 0 ? (
           blogs.map((blog) => {
             return (
               <div

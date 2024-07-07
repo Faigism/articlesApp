@@ -10,7 +10,6 @@ const Home = () => {
 
   useEffect(() => {
     dispatch(fetchNews(term))
-    console.log(articles)
   }, [term])
 
   return (

@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.header {
+  background-color: #f8f9fa;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+  font-weight: bold;
+  color: #495057;
+  h1 {
+    font-family: 'Corier New', Courier, monospace;
+    cursor: pointer;
+  }
+  .headerLinks {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+    li {
+      cursor: pointer;
+    }
+  }
+}
+
+.mainSec {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.createLink {
+  text-decoration: none;
+  color: #495057;
+}
+
+.addInputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputs {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  input {
+    padding: 10px;
+    outline: none;
+    border: 1px solid #b4b4b4;
+    border-radius: 10px;
+  }
+}
+
+.blogs {
+  background: url('https://static.vecteezy.com/system/resources/thumbnails/004/216/831/original/3d-world-news-background-loop-free-video.jpg');
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  .news-text {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.btn {
+  width: 400px;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  transition: 0.4s;
+  &:hover {
+    background-color: #2a2b2b;
+  }
+}
+
+.desc {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-word;
+}

@@ -1,11 +1,13 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
 
+let REACT_APP_ARTICLE_KEY = 'ewAUSurkRrE3D5ISnRL8chzHkxc7QtAO'
+
 export const fetchNews = createAsyncThunk(
   'articles/fetchArticles',
   async (term) => {
     try {
       const response = await fetch(
-        `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${term}&api-key=${process.env.REACT_APP_ARTICLE_KEY}`
+        `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${term}&api-key=${REACT_APP_ARTICLE_KEY}`
       )
       const data = await response.json()
       return data.response.docs
